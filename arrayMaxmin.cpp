@@ -1,26 +1,31 @@
 #include<iostream>
 using namespace std;
 int maxVal(int arr[],int count){
-    int max = INT16_MIN;
+    int maximum = INT16_MIN;
     for (int i = 0; i < count; i++)
     {
-        if(arr[i]>max){
+        /* if(arr[i]>max){
             max=arr[i];
-        }
+        } */
+
+        // max funcrion return maximum of two 
+        maximum = max(maximum, arr[i]);
     }
-    return max;
+    return maximum;
 
 }
 int minVal(int arr[],int count){
 
-    int min = INT16_MAX;
+    int minimum = INT16_MAX;
     for (int i = 0; i < count; i++)
     {
-        if(arr[i]<min){
+        /* if(arr[i]<min){
             min=arr[i];
-        }
+        } */
+
+        minimum = min(minimum,arr[i]);
     }
-    return min;
+    return minimum;
 }
 
 int main(){
