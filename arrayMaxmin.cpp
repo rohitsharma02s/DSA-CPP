@@ -23,10 +23,18 @@ int minVal(int arr[],int count){
     return min;
 }
 
-
 int main(){
-    int numArr[5]={5,8,7,3,1};
-    int count = 5;
+    int count;
+    cout<<"Enter The no of Elements in an Array"<<endl;
+    cin>>count;
+    int numArr[500];
+    cout<<"Enter The value of Array Elements"<<endl;
+    for (int i = 0; i < count; i++)
+    {
+       
+        cin>>numArr[i];
+    }
+    
     int max = maxVal(numArr,count);
     int min = minVal(numArr,count);
     cout<<"MaxValue of an Array is:"<<max<<endl;
